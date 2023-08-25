@@ -1,4 +1,6 @@
-# TemrinalZAP - RabbitMQ
+# TemrinalZAP - RabbitMQ (Arthur Castro)
+
+# Demonstração no vídeo demonstracao.webm
 
 ## Iniciando
 
