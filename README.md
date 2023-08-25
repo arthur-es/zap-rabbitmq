@@ -1,4 +1,4 @@
-# ZAP - RabbitMQ
+# TemrinalZAP - RabbitMQ
 
 ## Iniciando
 
@@ -27,22 +27,16 @@ docker pull rabbitmq
 docker run -itd --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.12.2-management
 ```
 
-5. Dentro da pasta backend comece a rodar o servidor:
+5. Rode 1 consumidor chamado arthur
 
 ```sh
-npm run server
+node message_receiver.js arthur
 ```
 
-6. Dentro da pasta backend comece a rodar o consumidor:
+6. Rode 1 produtor chamado arthur
 
 ```sh
-npm run consumer
+node message_sender.js arthur
 ```
 
-7. Dentro da pasta frontend comece a rodar o front:
-
-```sh
-npm run dev
-```
-
-1. Abra o link http://localhost:8080
+7. Rode mais produtores e consumidores

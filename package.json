@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "name": "terminal_zap-rabbitmq",
+  "description": "backend",
+  "scripts": {
+    "arthur_producer": "node message_sender.js arthur",
+    "arthur_consumer": "node message_receiver.js arthur",
+    "sarah_producer": "node message_sender.js sarah",
+    "sarah_consumer": "node message_receiver.js sarah",
+    "jac_producer": "node message_sender.js jac",
+    "jac_consumer": "node message_receiver.js jac"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "readline": "^1.3.0"
+  }
+}
